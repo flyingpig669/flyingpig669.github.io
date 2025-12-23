@@ -12,6 +12,7 @@ nav:
   - 笔记:
       - 数学: notes/math.md
       - Linux: notes/linux.md
+      - 技术分享: notes/技术分享/index.md
   - 关于: about.md
 
 markdown_extensions:
