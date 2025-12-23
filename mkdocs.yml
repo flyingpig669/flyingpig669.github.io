@@ -6,6 +6,28 @@ repo_name: flyingpig669.github.io
 repo_url: https://github.com/flyingpig669/flyingpig669.github.io
 edit_uri: edit/main/docs/
 
+
+nav:
+  - 首页: index.md
+  - 笔记:
+      - 数学: notes/math.md
+      - Linux: notes/linux.md
+  - 关于: about.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+      title: 目录
+
 theme:
   name: material
   language: zh
@@ -30,31 +52,11 @@ theme:
         icon: material/weather-sunny
         name: 切换到亮色模式
 
-nav:
-  - 首页: index.md
-  - 笔记:
-      - 数学: notes/math.md
-      - Linux: notes/linux.md
-  - 关于: about.md
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.arithmatex:
-      generic: true
-  - toc:
-      permalink: true
-      title: 目录
-
 plugins:
   - search:
       lang: zh
   - roamlinks
+  - macros
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
